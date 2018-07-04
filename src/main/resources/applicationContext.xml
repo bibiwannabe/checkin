@@ -14,7 +14,7 @@
     ">
 
     
-    <context:component-scan base-package="com.bibi">
+    <context:component-scan base-package="com.checkin">
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
     <!--数据源，输入控制-->
@@ -53,7 +53,7 @@
 
     <!--开启注释配置式事务-->
     <aop:config>
-        <aop:pointcut id="txPoint" expression="execution(* com.bibi.crud.service..*(..))"/>
+        <aop:pointcut id="txPoint" expression="execution(* com.checkin.service..*(..))"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="txPoint"/>
     </aop:config>
     <!--配置事务增强-->
