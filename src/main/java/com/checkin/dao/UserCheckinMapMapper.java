@@ -3,8 +3,11 @@ package com.checkin.dao;
 import com.checkin.entity.UserCheckinMap;
 import com.checkin.entity.UserCheckinMapExample;
 import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
+@Mapper
 public interface UserCheckinMapMapper {
     long countByExample(UserCheckinMapExample example);
 
