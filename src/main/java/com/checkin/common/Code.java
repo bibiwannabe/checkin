@@ -1,35 +1,18 @@
 package com.checkin.common;
 
-/**
- * Created by bibi on 2018/7/7.
- */
-public enum Code {
-    SUCCESS(1001,"成功"),
-    FAIL(1002,"失败"),
-    NO_LOGIN(1003,"未登录");
+import com.google.inject.internal.util.ImmutableMap;
 
-    public int getCode() {
-        return code;
-    }
+import java.util.Map;
 
-    public void setCode(int code) {
-        this.code = code;
-    }
+public class Code {
+    public final static int SUCCESS = 10000;
+    public final static int FAIL = 10001;
+    public final static int NO_LOGIN = 10003;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    private int code;
-    private String name;
-
-    Code(int code, String name) {
-        this.code = code;
-        this.name = name;
-    }
+    public final static Map<Integer,String> erroMessage = new ImmutableMap.Builder<Integer, String>()
+            .put(SUCCESS, "成功")
+            .put(FAIL, "失败")
+            .put(NO_LOGIN, "未登录")
+            .build();
 
 }
