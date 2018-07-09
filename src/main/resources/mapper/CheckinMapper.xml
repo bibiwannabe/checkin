@@ -85,6 +85,12 @@
       order by ${orderByClause}
     </if>
   </select>
+  <select id="findAllCheckin" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from checkin
+    order by create_time
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

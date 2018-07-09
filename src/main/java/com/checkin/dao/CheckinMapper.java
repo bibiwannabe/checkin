@@ -30,4 +30,6 @@ public interface CheckinMapper {
     int updateByPrimaryKeySelective(Checkin record);
 
     int updateByPrimaryKey(Checkin record);
+
+    List<Checkin> findAllCheckin();
 }

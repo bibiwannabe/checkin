@@ -20,6 +20,9 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public boolean register(User user) {
+        if (user.getUserName() == null || user.getUserPassword() == null || user.getUserPassword().length() < 6) {
+            throw new InvalidException(Code.FAIL, "用户名，用户密码不能为空，用户密码长度不能少于6");
+        }
         User oldUser = userDao.findUserByUserName(user.getUserName());
         if (oldUser != null) {
             throw new InvalidException(Code.FAIL, "用户名已存在");
@@ -31,14 +34,23 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public boolean login(String userName, String password, HttpSession session){
-         String pwd = MD5Util.MD5EncodeUtf8(password);
-         User user = userDao.selectByNameAndPassword(userName, pwd);
-         if(user == null){
-             throw new InvalidException(Code.FAIL, "用户名或密码不正确");
-         }
-         session.setAttribute(SessionConst.CURRENT_USER, user.getUserId());
-         return true;
+    public boolean login(String userName, String password, HttpSession session) {
+        String pwd = MD5Util.MD5EncodeUtf8(password);
+        User user = userDao.selectByNameAndPassword(userName, pwd);
+        if (user == null) {
+            throw new InvalidException(Code.FAIL, "用户名或密码不正确");
+        }
+        session.setAttribute(SessionConst.CURRENT_USER, user.getUserId());
+        return true;
+    }
+
+    @Override
+    public boolean logout(HttpSession session) {
+        if (session.getAttribute(SessionConst.CURRENT_USER) == null) {
+            throw new InvalidException(Code.NO_LOGIN, "你似乎未曾登录");
+        }
+        session.removeAttribute(SessionConst.CURRENT_USER);
+        return true;
     }
 
 
