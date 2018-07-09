@@ -11,69 +11,42 @@ import java.util.Random;
  * Created by bibi on 2018/7/7.
  */
 public class MD5Util {
-    private static final String HEX_NUMS_STR="0123456789ABCDEF";
-    private static final Integer SALT_LENGTH = 12;
-
-    public static byte[] hexStringToByte(String hex) {
-        int len = (hex.length() / 2);
-        byte[] result = new byte[len];
-        char[] hexChars = hex.toCharArray();
-        for (int i = 0; i < len; i++) {
-            int pos = i * 2;
-            result[i] = (byte) (HEX_NUMS_STR.indexOf(hexChars[pos]) << 4
-                    | HEX_NUMS_STR.indexOf(hexChars[pos + 1]));
+    private static String byteArrayToHexString(byte b[]) {
+        StringBuffer resultSb = new StringBuffer();
+        for (int i = 0; i < b.length; i++){
+            resultSb.append(byteToHexString(b[i]));
         }
-        return result;
+        return resultSb.toString();
     }
 
-
-    public static String byteToHexString(byte[] b) {
-        StringBuffer hexString = new StringBuffer();
-        for (int i = 0; i < b.length; i++) {
-            String hex = Integer.toHexString(b[i] & 0xFF);
-            if (hex.length() == 1) {
-                hex = '0' + hex;
-            }
-            hexString.append(hex.toUpperCase());
-        }
-        return hexString.toString();
+    private static String byteToHexString(byte b) {
+        int n = b;
+        if (n < 0)
+            n += 256;
+        int d1 = n / 16;
+        int d2 = n % 16;
+        return hexDigits[d1] + hexDigits[d2];
     }
 
-    public static boolean validPassword(String password, String passwordInDb)
-            throws NoSuchAlgorithmException, UnsupportedEncodingException {
-        byte[] pwdInDb = hexStringToByte(passwordInDb);
-        byte[] salt = new byte[SALT_LENGTH];
-        System.arraycopy(pwdInDb, 0, salt, 0, SALT_LENGTH);
-        MessageDigest md = MessageDigest.getInstance("MD5");
-        md.update(salt);
-        md.update(password.getBytes("UTF-8"));
-        byte[] digest = md.digest();
-        byte[] digestInDb = new byte[pwdInDb.length - SALT_LENGTH];
-        System.arraycopy(pwdInDb, SALT_LENGTH, digestInDb, 0, digestInDb.length);
-        if (Arrays.equals(digest, digestInDb)) {
-            return true;
-        } else {
-            return false;
+    private static String MD5Encode(String origin, String charsetname) {
+        String resultString = null;
+        try {
+            resultString = new String(origin);
+            MessageDigest md = MessageDigest.getInstance("MD5");
+            if (charsetname == null || "".equals(charsetname))
+                resultString = byteArrayToHexString(md.digest(resultString.getBytes()));
+            else
+                resultString = byteArrayToHexString(md.digest(resultString.getBytes(charsetname)));
+        } catch (Exception exception) {
         }
+        return resultString.toUpperCase();
     }
 
-    public static String getEncryptedPwd(String password)
-            throws NoSuchAlgorithmException, UnsupportedEncodingException {
-        byte[] pwd = null;
-        SecureRandom random = new SecureRandom();
-        byte[] salt = new byte[SALT_LENGTH];
-        random.nextBytes(salt);
-        MessageDigest md = null;
-        md = MessageDigest.getInstance("MD5");
-        md.update(salt);
-        md.update(password.getBytes("UTF-8"));
-        byte[] digest = md.digest();
-        pwd = new byte[digest.length + SALT_LENGTH];
-        System.arraycopy(salt, 0, pwd, 0, SALT_LENGTH);
-        System.arraycopy(digest, 0, pwd, SALT_LENGTH, digest.length);
-        for(int i=0;i<pwd.length;i++){
-            System.out.print(pwd[i]);
-        }
-        return byteToHexString(pwd);
+    public static String MD5EncodeUtf8(String origin) {
+        origin = origin + "geelysdafaqj23ou89ZXcj@#$@#$#@KJdjklj;D../dSF.,";
+        return MD5Encode(origin, "utf-8");
     }
+
+    private static final String hexDigits[] = {"0", "1", "2", "3", "4", "5",
+            "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
 }

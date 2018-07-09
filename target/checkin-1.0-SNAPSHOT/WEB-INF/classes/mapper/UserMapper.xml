@@ -88,6 +88,18 @@
     from user
     where user_id = #{userId,jdbcType=INTEGER}
   </select>
+  <select id="findUserByUserName" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from user
+    where user_name = #{userName}
+  </select>
+  <select id="selectByNameAndPassword" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from user
+    where user_name = #{userName} AND user_password = #{password}
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from user
     where user_id = #{userId,jdbcType=INTEGER}

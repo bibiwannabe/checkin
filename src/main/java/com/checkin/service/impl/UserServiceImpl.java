@@ -1,10 +1,16 @@
 package com.checkin.service.impl;
 
+import com.checkin.common.Code;
+import com.checkin.common.SessionConst;
 import com.checkin.dao.UserMapper;
 import com.checkin.entity.User;
+import com.checkin.exception.InvalidException;
 import com.checkin.service.UserService;
+import com.checkin.utils.MD5Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import javax.servlet.http.HttpSession;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -13,12 +19,27 @@ public class UserServiceImpl implements UserService {
     private UserMapper userDao;
 
     @Override
-    public boolean register(User user){
-        String pwd = user.getUserPassword();
+    public boolean register(User user) {
+        User oldUser = userDao.findUserByUserName(user.getUserName());
+        if (oldUser != null) {
+            throw new InvalidException(Code.FAIL, "用户名已存在");
+        }
+        String encryptPassword = MD5Util.MD5EncodeUtf8(user.getUserPassword());
+        user.setUserPassword(encryptPassword);
         userDao.insertSelective(user);
         return true;
     }
 
+    @Override
+    public boolean login(String userName, String password, HttpSession session){
+         String pwd = MD5Util.MD5EncodeUtf8(password);
+         User user = userDao.selectByNameAndPassword(userName, pwd);
+         if(user == null){
+             throw new InvalidException(Code.FAIL, "用户名或密码不正确");
+         }
+         session.setAttribute(SessionConst.CURRENT_USER, user.getUserId());
+         return true;
+    }
 
 
 }

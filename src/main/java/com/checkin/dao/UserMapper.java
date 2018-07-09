@@ -30,4 +30,8 @@ public interface UserMapper {
     int updateByPrimaryKeySelective(User record);
 
     int updateByPrimaryKey(User record);
+
+    User findUserByUserName(@Param("userName") String userName);
+
+    User selectByNameAndPassword(@Param("userName") String userName, @Param("password") String password);
 }
