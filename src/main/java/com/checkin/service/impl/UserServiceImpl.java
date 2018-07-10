@@ -5,6 +5,7 @@ import com.checkin.common.SessionConst;
 import com.checkin.dao.UserMapper;
 import com.checkin.entity.User;
 import com.checkin.exception.InvalidException;
+import com.checkin.exception.NoLoginException;
 import com.checkin.service.UserService;
 import com.checkin.utils.MD5Util;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,7 +56,7 @@ public class UserServiceImpl implements UserService {
 
     public void setLocation(String location, HttpSession session){
         if (session.getAttribute(SessionConst.CURRENT_USER) == null) {
-            throw new InvalidException(Code.NO_LOGIN, "你似乎未曾登录");
+            throw new NoLoginException(Code.NO_LOGIN, "你似乎未曾登录");
         }
         session.setAttribute(SessionConst.CURRENT_LOCATION, location);
     }
