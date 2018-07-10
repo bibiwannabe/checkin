@@ -1,5 +1,6 @@
 package com.checkin.dao;
 
+import com.checkin.entity.User;
 import com.checkin.entity.UserCheckinMap;
 import com.checkin.entity.UserCheckinMapExample;
 import java.util.List;
@@ -30,4 +31,8 @@ public interface UserCheckinMapMapper {
     int updateByPrimaryKeySelective(UserCheckinMap record);
 
     int updateByPrimaryKey(UserCheckinMap record);
+
+    UserCheckinMap findByidAnduserId(@Param("id") Integer id, @Param("userId") Integer userId);
+
+    List<UserCheckinMap> findByCheckinId(@Param("checkinId") Integer id);
 }

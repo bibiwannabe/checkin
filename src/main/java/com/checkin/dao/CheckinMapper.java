@@ -2,6 +2,8 @@ package com.checkin.dao;
 
 import com.checkin.entity.Checkin;
 import com.checkin.entity.CheckinExample;
+
+import java.sql.Timestamp;
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
@@ -32,4 +34,6 @@ public interface CheckinMapper {
     int updateByPrimaryKey(Checkin record);
 
     List<Checkin> findAllCheckin();
+
+    Checkin findByTimestampAndOrgId(@Param("timestamp")Timestamp timestamp, @Param("orgId") Integer userId);
 }

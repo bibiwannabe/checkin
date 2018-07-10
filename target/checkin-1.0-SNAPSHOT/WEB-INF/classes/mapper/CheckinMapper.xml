@@ -85,11 +85,23 @@
       order by ${orderByClause}
     </if>
   </select>
+  <select id="findAllCheckin" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from checkin
+    order by create_time DESC
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from checkin
     where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="findByTimestampAndOrgId" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from checkin
+    where create_time = #{timestamp} AND organizer_id = #{orgId}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from checkin

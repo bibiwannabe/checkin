@@ -83,11 +83,24 @@
       order by ${orderByClause}
     </if>
   </select>
+  <select id="findByCheckinId" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from user_checkin_map
+    WHERE checkin_id = #{checkinId}
+    order by lcreate_time;
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from user_checkin_map
     where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="findByidAnduserId" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from user_checkin_map
+    where checkin_id = #{id} AND user_id = #{userId}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from user_checkin_map

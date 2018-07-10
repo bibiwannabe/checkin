@@ -53,5 +53,10 @@ public class UserServiceImpl implements UserService {
         return true;
     }
 
-
+    public void setLocation(String location, HttpSession session){
+        if (session.getAttribute(SessionConst.CURRENT_USER) == null) {
+            throw new InvalidException(Code.NO_LOGIN, "你似乎未曾登录");
+        }
+        session.setAttribute(SessionConst.CURRENT_LOCATION, location);
+    }
 }

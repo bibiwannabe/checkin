@@ -15,6 +15,15 @@ public class Checkin {
 
     private Integer limitTime;
 
+    public Checkin(String detail, String location, Integer limitTime) {
+        this.detail = detail;
+        this.location = location;
+        this.limitTime = limitTime;
+    }
+
+    public Checkin() {
+    }
+
     public Integer getId() {
         return id;
     }

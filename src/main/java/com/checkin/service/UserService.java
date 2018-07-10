@@ -11,4 +11,6 @@ public interface UserService {
     boolean login(String userName, String password, HttpSession session);
 
     boolean logout(HttpSession session);
+
+    void setLocation(String location, HttpSession session);
 }

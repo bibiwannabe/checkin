@@ -4,12 +4,11 @@ import com.checkin.common.Code;
 import com.checkin.common.Result;
 import com.checkin.entity.Checkin;
 import com.checkin.exception.InvalidException;
+import com.checkin.exception.NoLoginException;
 import com.checkin.service.CheckinService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
 import java.util.List;
@@ -23,26 +22,49 @@ public class CheckinController {
 
     @RequestMapping(value = "/create", method = RequestMethod.POST)
     @ResponseBody
-    Result<Checkin> createCheckin(Checkin checkin, HttpSession session){
-        Checkin newCheckin;
+    public Result<Checkin> createCheckin(String detail, String location, Integer limitTime, HttpSession session) {
+        System.out.println(detail + location + limitTime);
+        Checkin checkin = new Checkin(detail, location, limitTime);
         try {
-            newCheckin = checkinService.createCheckin(checkin, session);
-        }catch (InvalidException e){
+            checkin = checkinService.createCheckin(checkin, session);
+        } catch (InvalidException e) {
             return new Result.Builder<Checkin>(checkin).setCode(Code.FAIL).setMessage(e.getMessage()).build();
+        } catch (NoLoginException e) {
+            return new Result.Builder<Checkin>(checkin).setCode(Code.NO_LOGIN).setMessage(e.getMessage()).build();
         }
-        return new Result.Builder<Checkin>(newCheckin).setCode(Code.SUCCESS).setMessage(Code.erroMessage.get(Code.SUCCESS)).build();
+        return new Result.Builder<Checkin>(checkin).setCode(Code.SUCCESS).setMessage(Code.erroMessage.get(Code.SUCCESS)).build();
     }
 
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     @ResponseBody
-    Result<List<Checkin>> listAllCheckin(){
+    public Result<List<Checkin>> listAllCheckin() {
         List<Checkin> checkinList = null;
         try {
             checkinList = checkinService.listAllCheckin();
-        }catch (InvalidException e){
+        } catch (InvalidException e) {
             return new Result.Builder<List<Checkin>>(checkinList).setCode(Code.FAIL).setMessage(e.getMessage()).build();
         }
         return new Result.Builder<List<Checkin>>(checkinList).setCode(Code.SUCCESS).setMessage(Code.erroMessage.get(Code.SUCCESS)).build();
     }
 
+    @RequestMapping(value = "/join", method = RequestMethod.POST)
+    @ResponseBody
+    public Result<String> joinCheckin(Integer id, HttpSession session) {
+        try {
+           checkinService.joinCheckin(id, session);
+        } catch (InvalidException e) {
+            return new Result.Builder<String>(e.getMessage()).setCode(Code.FAIL).setMessage(Code.erroMessage.get(Code.FAIL)).build();
+        } catch (NoLoginException e){
+            return new Result.Builder<String>(e.getMessage()).setCode(Code.NO_LOGIN).setMessage(Code.erroMessage.get(Code.NO_LOGIN)).build();
+        }
+        return new Result.Builder<String>("签到成功").setCode(Code.SUCCESS).setMessage(Code.erroMessage.get(Code.SUCCESS)).build();
+    }
+
+
+    @RequestMapping(value = "/{id}/list_users", method = RequestMethod.GET)
+    @ResponseBody
+    public Result<List<String>> listCheckinUser(@PathVariable(value = "id") Integer id){
+        List<String> userList =  checkinService.listCheckinUser(id);
+        return new Result.Builder<List<String>>(userList).setCode(Code.SUCCESS).setMessage(Code.erroMessage.get(Code.SUCCESS)).build();
+    }
 }

@@ -11,6 +11,22 @@ public class UserCheckinMap {
 
     private Date lcreateTime;
 
+    public UserCheckinMap(Integer checkinId, Integer userId, Date lcreateTime) {
+        this.checkinId = checkinId;
+        this.userId = userId;
+        this.lcreateTime = lcreateTime;
+    }
+
+    public UserCheckinMap(Integer id, Integer checkinId, Integer userId, Date lcreateTime) {
+        this.id = id;
+        this.checkinId = checkinId;
+        this.userId = userId;
+        this.lcreateTime = lcreateTime;
+    }
+
+    public UserCheckinMap() {
+    }
+
     public Integer getId() {
         return id;
     }
