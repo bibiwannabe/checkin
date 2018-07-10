@@ -1,3 +1,4 @@
 *.idea
-*mybatis-generate.xml
+* target
+* mybatis-generate.xml
 
