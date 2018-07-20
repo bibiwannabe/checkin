@@ -7,8 +7,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3875fd6-49d2-4374-9ff2-dd51fa4469a7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/checkin/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/checkin/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/checkin/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/checkin/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/checkin/common/Code.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/checkin/common/Code.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/checkin/controller/CheckinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/checkin/controller/CheckinController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/checkin/dao/CheckinMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/checkin/dao/CheckinMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/checkin/service/CheckinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/checkin/service/CheckinService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/checkin/service/impl/CheckinServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/checkin/service/impl/CheckinServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/checkin/vo/UserVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CheckinMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CheckinMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/checkin-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/checkin-1.0-SNAPSHOT/WEB-INF/classes/com/checkin/controller/CheckinController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/checkin-1.0-SNAPSHOT/WEB-INF/classes/com/checkin/controller/CheckinController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/checkin-1.0-SNAPSHOT/WEB-INF/classes/com/checkin/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/checkin-1.0-SNAPSHOT/WEB-INF/classes/com/checkin/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/checkin-1.0-SNAPSHOT/WEB-INF/classes/com/checkin/dao/CheckinMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/checkin-1.0-SNAPSHOT/WEB-INF/classes/com/checkin/dao/CheckinMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/checkin-1.0-SNAPSHOT/WEB-INF/classes/com/checkin/service/CheckinService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/checkin-1.0-SNAPSHOT/WEB-INF/classes/com/checkin/service/CheckinService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/checkin-1.0-SNAPSHOT/WEB-INF/classes/com/checkin/service/impl/CheckinServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/checkin-1.0-SNAPSHOT/WEB-INF/classes/com/checkin/service/impl/CheckinServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/checkin-1.0-SNAPSHOT/WEB-INF/classes/com/checkin/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/checkin-1.0-SNAPSHOT/WEB-INF/classes/com/checkin/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/checkin-1.0-SNAPSHOT/WEB-INF/classes/mapper/CheckinMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/checkin-1.0-SNAPSHOT/WEB-INF/classes/mapper/CheckinMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/checkin/controller/CheckinController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/checkin/controller/CheckinController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/checkin/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/checkin/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/checkin/dao/CheckinMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/checkin/dao/CheckinMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/checkin/service/CheckinService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/checkin/service/CheckinService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/checkin/service/impl/CheckinServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/checkin/service/impl/CheckinServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/checkin/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/checkin/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CheckinMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/CheckinMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,34 +75,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CheckinServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/service/impl/CheckinServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1630#1631#0" expanded="true" />
-                <element signature="e#1680#1681#0" expanded="true" />
-                <element signature="e#3115#3123#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mybatis-config.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
+            <state relative-caret-position="521">
               <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -87,23 +87,72 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/service/UserService.java">
+      <file leaf-file-name="CheckinMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/dao/CheckinMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <state relative-caret-position="516">
+              <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckinMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CheckinMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="204" column="11" selection-start-line="204" selection-start-column="11" selection-end-line="204" selection-end-column="11" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#sql#0;n#mapper#0;n#!!top" />
+                <element signature="n#sql#1;n#mapper#0;n#!!top" />
+                <element signature="n#sql#2;n#mapper#0;n#!!top" />
+                <element signature="n#select#0;n#mapper#0;n#!!top" />
+                <element signature="n#select#2;n#mapper#0;n#!!top" />
+                <element signature="n#select#3;n#mapper#0;n#!!top" />
+                <element signature="n#delete#0;n#mapper#0;n#!!top" />
+                <element signature="n#delete#1;n#mapper#0;n#!!top" />
+                <element signature="n#insert#0;n#mapper#0;n#!!top" />
+                <element signature="n#insert#1;n#mapper#0;n#!!top" />
+                <element signature="n#update#0;n#mapper#0;n#!!top" />
+                <element signature="n#update#1;n#mapper#0;n#!!top" />
+                <element signature="n#update#2;n#mapper#0;n#!!top" />
+                <element signature="n#update#3;n#mapper#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/service/impl/UserServiceImpl.java">
+      <file leaf-file-name="user" pinned="false" current-in-tab="false">
+        <entry file="das://92109db7-59f2-445e-abfb-3d6bf7619925/schema/checkin/table/user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_checkin_map" pinned="false" current-in-tab="false">
+        <entry file="das://92109db7-59f2-445e-abfb-3d6bf7619925/schema/checkin/table/user_checkin_map">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkin" pinned="false" current-in-tab="true">
+        <entry file="das://92109db7-59f2-445e-abfb-3d6bf7619925/schema/checkin/table/checkin">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Code.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/common/Code.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="59" column="9" lean-forward="true" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
+            <state relative-caret-position="120">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,35 +163,8 @@
       <file leaf-file-name="CheckinController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/controller/CheckinController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dbconfig.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/dbconfig.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="27" selection-start-column="27" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console_1.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/92109db7-59f2-445e-abfb-3d6bf7619925/console_1.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CheckinService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/service/CheckinService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+            <state relative-caret-position="536">
+              <caret line="82" column="1" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,11 +172,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".ignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.ignore">
+      <file leaf-file-name="CheckinService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/service/CheckinService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="340">
+              <caret line="17" column="54" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckinServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/service/impl/CheckinServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="502">
+              <caret line="90" column="34" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -186,7 +223,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/webapp/WEB-INF/dispatcherServlet-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/checkin/common/Result.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/checkin/common/Code.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/checkin/vo/UserVo.java" />
         <option value="$PROJECT_DIR$/src/main/resources/webapp/WEB-INF/web.xml" />
@@ -201,23 +237,24 @@
         <option value="$PROJECT_DIR$/src/main/java/com/checkin/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/checkin/exception/NoLoginException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/checkin/entity/Checkin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/checkin/dao/CheckinMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/CheckinMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/checkin/entity/UserCheckinMap.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/92109db7-59f2-445e-abfb-3d6bf7619925/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/checkin/common/SessionConst.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/checkin/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/checkin/dao/UserCheckinMapMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/UserCheckinMapMapper.xml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/92109db7-59f2-445e-abfb-3d6bf7619925/console_1.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/checkin/service/impl/CheckinServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/checkin/service/CheckinService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/checkin/controller/CheckinController.java" />
         <option value="$PROJECT_DIR$/target/classes/dbconfig.properties" />
         <option value="$PROJECT_DIR$/mybatis-generate.xml" />
         <option value="$PROJECT_DIR$/.ignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/checkin/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/checkin/service/impl/UserServiceImpl.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/92109db7-59f2-445e-abfb-3d6bf7619925/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/checkin/common/Code.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/checkin/service/CheckinService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/checkin/service/impl/CheckinServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/checkin/dao/CheckinMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/CheckinMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/checkin/controller/CheckinController.java" />
       </list>
     </option>
   </component>
@@ -274,8 +311,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -338,11 +374,33 @@
               <item name="checkin" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="checkin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="checkin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="checkin" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="checkin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="checkin" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="checkin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="checkin" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="checkin-1.0-SNAPSHOT" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -691,12 +749,15 @@
       <workItem from="1530931918744" duration="3049000" />
       <workItem from="1531021534319" duration="1335000" />
       <workItem from="1531102858435" duration="9331000" />
-      <workItem from="1531116743045" duration="30278000" />
+      <workItem from="1531116743045" duration="30354000" />
+      <workItem from="1531215585329" duration="2146000" />
+      <workItem from="1531388876657" duration="2323000" />
+      <workItem from="1531728737790" duration="9916000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49987000" />
+    <option name="totallyTimeSpent" value="64448000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="24" width="1853" height="1045" extended-state="0" />
@@ -704,11 +765,11 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32932165" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.18096292" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.18096292" />
       <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32932165" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" weight="0.25456557" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.17985612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.099612616" />
       <window_info id="UI Designer" order="2" />
@@ -719,24 +780,24 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32932165" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3085339" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32932165" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3085339" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Database Console" weight="0.32932165" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20254566" />
+      <window_info anchor="bottom" id="Database Console" order="9" weight="0.24726477" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20475927" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Properties" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info id="Nl-Palette" order="2" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Properties" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -755,20 +816,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-generate.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="943">
-          <caret line="41" column="25" lean-forward="true" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis-generate.xml" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2920">
@@ -816,23 +864,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/common/Code.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/common/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -900,13 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://92109db7-59f2-445e-abfb-3d6bf7619925/schema/checkin/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/exception/DaoException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
@@ -928,16 +952,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
           <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#114#115#0" expanded="true" />
-            <element signature="e#141#142#0" expanded="true" />
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#210#211#0" expanded="true" />
-            <element signature="e#258#259#0" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -945,38 +959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CheckinMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="104" column="11" lean-forward="true" selection-start-line="104" selection-start-column="11" selection-end-line="104" selection-end-column="11" />
-          <folding>
-            <element signature="n#sql#0;n#mapper#0;n#!!top" />
-            <element signature="n#sql#1;n#mapper#0;n#!!top" />
-            <element signature="n#sql#2;n#mapper#0;n#!!top" />
-            <element signature="n#select#0;n#mapper#0;n#!!top" />
-            <element signature="n#select#1;n#mapper#0;n#!!top" />
-            <element signature="n#select#2;n#mapper#0;n#!!top" />
-            <element signature="n#select#3;n#mapper#0;n#!!top" />
-            <element signature="n#delete#0;n#mapper#0;n#!!top" />
-            <element signature="n#delete#1;n#mapper#0;n#!!top" />
-            <element signature="n#insert#0;n#mapper#0;n#!!top" />
-            <element signature="n#insert#1;n#mapper#0;n#!!top" />
-            <element signature="n#select#3;n#mapper#0;n#!!top" />
-            <element signature="n#update#0;n#mapper#0;n#!!top" />
-            <element signature="n#update#1;n#mapper#0;n#!!top" />
-            <element signature="n#update#2;n#mapper#0;n#!!top" />
-            <element signature="n#update#3;n#mapper#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/dao/CheckinMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1001,31 +983,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://92109db7-59f2-445e-abfb-3d6bf7619925/schema/checkin/table/checkin">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/92109db7-59f2-445e-abfb-3d6bf7619925/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/common/SessionConst.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://92109db7-59f2-445e-abfb-3d6bf7619925/schema/checkin/table/user_checkin_map">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1090,43 +1051,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/service/impl/CheckinServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1630#1631#0" expanded="true" />
-            <element signature="e#1680#1681#0" expanded="true" />
-            <element signature="e#3115#3123#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/service/CheckinService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-generate.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/controller/CheckinController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis-generate.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1152,25 +1077,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="36" column="8" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
-          <folding>
-            <element signature="n#resultMap#0;n#mapper#0;n#!!top" />
-            <element signature="n#sql#0;n#mapper#0;n#!!top" />
-            <element signature="n#sql#1;n#mapper#0;n#!!top" />
-            <element signature="n#sql#2;n#mapper#0;n#!!top" />
-            <element signature="n#select#0;n#mapper#0;n#!!top" />
-            <element signature="n#select#1;n#mapper#0;n#!!top" />
-            <element signature="n#select#2;n#mapper#0;n#!!top" />
-            <element signature="n#select#3;n#mapper#0;n#!!top" />
-            <element signature="n#delete#0;n#mapper#0;n#!!top" />
-            <element signature="n#delete#1;n#mapper#0;n#!!top" />
-            <element signature="n#insert#0;n#mapper#0;n#!!top" />
-            <element signature="n#insert#1;n#mapper#0;n#!!top" />
-            <element signature="n#select#4;n#mapper#0;n#!!top" />
-            <element signature="n#update#0;n#mapper#0;n#!!top" />
-            <element signature="n#update#1;n#mapper#0;n#!!top" />
-            <element signature="n#update#2;n#mapper#0;n#!!top" />
-            <element signature="n#update#3;n#mapper#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1178,25 +1084,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-          <folding>
-            <element signature="n#resultMap#0;n#mapper#0;n#!!top" />
-            <element signature="n#sql#0;n#mapper#0;n#!!top" />
-            <element signature="n#sql#1;n#mapper#0;n#!!top" />
-            <element signature="n#sql#2;n#mapper#0;n#!!top" />
-            <element signature="n#select#0;n#mapper#0;n#!!top" />
-            <element signature="n#select#1;n#mapper#0;n#!!top" />
-            <element signature="n#select#2;n#mapper#0;n#!!top" />
-            <element signature="n#select#3;n#mapper#0;n#!!top" />
-            <element signature="n#delete#0;n#mapper#0;n#!!top" />
-            <element signature="n#delete#1;n#mapper#0;n#!!top" />
-            <element signature="n#insert#0;n#mapper#0;n#!!top" />
-            <element signature="n#insert#1;n#mapper#0;n#!!top" />
-            <element signature="n#select#4;n#mapper#0;n#!!top" />
-            <element signature="n#update#0;n#mapper#0;n#!!top" />
-            <element signature="n#update#1;n#mapper#0;n#!!top" />
-            <element signature="n#update#2;n#mapper#0;n#!!top" />
-            <element signature="n#update#3;n#mapper#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1210,23 +1097,13 @@
     <entry file="file://$PROJECT_DIR$/.ignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
+        <state relative-caret-position="240">
           <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1236,11 +1113,133 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="59" column="9" lean-forward="true" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
+        <state relative-caret-position="640">
+          <caret line="43" column="44" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://92109db7-59f2-445e-abfb-3d6bf7619925/schema/checkin/table/user.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/92109db7-59f2-445e-abfb-3d6bf7619925/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/common/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/common/Code.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/service/CheckinService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/service/impl/CheckinServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="90" column="34" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/dao/CheckinMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CheckinMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="204" column="11" selection-start-line="204" selection-start-column="11" selection-end-line="204" selection-end-column="11" />
+          <folding>
+            <element signature="n#sql#0;n#mapper#0;n#!!top" />
+            <element signature="n#sql#1;n#mapper#0;n#!!top" />
+            <element signature="n#sql#2;n#mapper#0;n#!!top" />
+            <element signature="n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#select#2;n#mapper#0;n#!!top" />
+            <element signature="n#select#3;n#mapper#0;n#!!top" />
+            <element signature="n#delete#0;n#mapper#0;n#!!top" />
+            <element signature="n#delete#1;n#mapper#0;n#!!top" />
+            <element signature="n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#update#1;n#mapper#0;n#!!top" />
+            <element signature="n#update#2;n#mapper#0;n#!!top" />
+            <element signature="n#update#3;n#mapper#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/checkin/controller/CheckinController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="82" column="1" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://92109db7-59f2-445e-abfb-3d6bf7619925/schema/checkin/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://92109db7-59f2-445e-abfb-3d6bf7619925/schema/checkin/table/user_checkin_map">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://92109db7-59f2-445e-abfb-3d6bf7619925/schema/checkin/table/checkin">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>

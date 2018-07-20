@@ -14,4 +14,6 @@ public interface CheckinService {
     void joinCheckin(Integer id, HttpSession session);
 
     List<String> listCheckinUser(Integer id);
+
+    List<Checkin> listUserCheckin(HttpSession session);
 }

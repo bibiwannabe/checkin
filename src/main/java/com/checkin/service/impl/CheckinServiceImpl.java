@@ -82,4 +82,12 @@ public class CheckinServiceImpl implements CheckinService {
         }
         return userList;
     }
+
+    public List<Checkin> listUserCheckin(HttpSession session) {
+        Integer userId = (Integer) session.getAttribute(SessionConst.CURRENT_USER);
+        if (userId == null) {
+            throw new NoLoginException(Code.NO_LOGIN, "用户未登录");
+        }
+        return checkinDao.findByOrgId(userId);
+    }
 }

@@ -67,4 +67,17 @@ public class CheckinController {
         List<String> userList =  checkinService.listCheckinUser(id);
         return new Result.Builder<List<String>>(userList).setCode(Code.SUCCESS).setMessage(Code.erroMessage.get(Code.SUCCESS)).build();
     }
+
+
+    @RequestMapping(value = "/my_checkin", method = RequestMethod.GET)
+    @ResponseBody
+    public Result<List<Checkin>> listUserCheckin(HttpSession session){
+        List<Checkin> checkinList = null;
+        try {
+            checkinList =  checkinService.listUserCheckin(session);
+        }catch (NoLoginException e){
+            return new Result.Builder<List<Checkin>>(checkinList).setCode(Code.NO_LOGIN).setMessage(Code.erroMessage.get(Code.NO_LOGIN)).build();
+        }
+        return new Result.Builder<List<Checkin>>(checkinList).setCode(Code.SUCCESS).setMessage(Code.erroMessage.get(Code.SUCCESS)).build();
+    }
 }

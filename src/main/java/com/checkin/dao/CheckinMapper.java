@@ -36,4 +36,6 @@ public interface CheckinMapper {
     List<Checkin> findAllCheckin();
 
     Checkin findByTimestampAndOrgId(@Param("timestamp")Timestamp timestamp, @Param("orgId") Integer userId);
+
+    List<Checkin> findByOrgId( @Param("orgId") Integer orgId);
 }

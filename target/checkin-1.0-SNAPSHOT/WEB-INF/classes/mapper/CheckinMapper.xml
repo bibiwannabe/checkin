@@ -103,6 +103,13 @@
     from checkin
     where create_time = #{timestamp} AND organizer_id = #{orgId}
   </select>
+  <select id="findByOrgId" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from checkin
+    where organizer_id = #{orgId}
+    order by create_time DESC
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from checkin
     where id = #{id,jdbcType=INTEGER}
