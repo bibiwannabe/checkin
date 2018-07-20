@@ -1,4 +1,7 @@
-*.idea
-* target
+.idea
+
 * mybatis-generate.xml
 
+target
+
+.iml
